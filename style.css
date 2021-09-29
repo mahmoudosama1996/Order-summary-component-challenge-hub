@@ -1,0 +1,149 @@
+
+@import url(./fonts.css);
+
+
+
+html, body {
+    margin: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+/* ------------ Global ------------- */
+a {
+    display: inline-block;
+    text-decoration:none;
+    color: #49439C;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+     /* theme color */
+    --text-gray:#3f4954;
+    --text-light:#777C92;
+    --bg-color:#0f0f0f;
+    --midnight:#104f55;
+    
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-gray {
+      color: var(--text-gray);
+  }
+
+  .text-light {
+    color: var(--text-light);
+    font-weight: 100;
+    
+  }
+/* -----x------ Global ------x------ */
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 25px;
+    background-color: #E0E8FF;
+    background-image: url(img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+
+}
+
+.component {
+    color: var(--text-gray);
+    overflow: hidden;
+    background-color: #FFFFFF;
+    width:450px;
+    border-radius: 20px;
+    box-shadow:  0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.summary {
+    font-family: lexend;
+    padding:0 40px;
+    text-align: center;
+}
+.summary > div {
+    display: flex; 
+    flex-direction: column;  
+    padding: 18px 0 ;
+}
+
+.summary .plan {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F8F9FE;
+    border-radius: 15px;
+    padding: 18px;
+}
+
+.icon-music> img {
+
+    max-width: none;
+}
+
+.plan >  div {
+    padding: 10px;
+    margin: auto;
+
+}
+
+.plan .plan-change {
+    padding: 25px 10px 25px 80px;
+}
+
+.plan a {
+    color: #49439C;
+    font-size: .9em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.plan a:hover {
+    color: #887FD6;
+    text-decoration: none;
+}
+
+.payment button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    background-color: #382AE1;
+    border-radius: 10px;
+    box-shadow:  0 20px 15px  rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.payment button:hover {
+    background-color: #766CF1;
+}
+
+.cancel a:hover {
+    color: #34415A;
+    font-weight: bold;
+
+}
+
+/*---------responsive----------*/
+
+@media only screen and (max-width: 540px) {
+
+    .plan .plan-change {
+        padding: 25px 10px;
+    }
+
+    .summary {
+        padding:0 25px;
+    }
+    
+    
+}
